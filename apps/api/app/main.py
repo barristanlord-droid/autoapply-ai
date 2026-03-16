@@ -33,7 +33,7 @@ cors_origins = [
     settings.FRONTEND_URL,
     "http://localhost:3000",
     "http://localhost:3001",
-    "https://autoapply-ai.vercel.app",
+    "https://careerly.vercel.app",
     "capacitor://localhost",
     "https://localhost",
 ]

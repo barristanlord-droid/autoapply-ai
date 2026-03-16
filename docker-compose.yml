@@ -5,7 +5,7 @@ services:
   db:
     image: pgvector/pgvector:pg16
     environment:
-      POSTGRES_DB: autoapply
+      POSTGRES_DB: careerly
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:
@@ -42,7 +42,7 @@ services:
     env_file:
       - .env
     environment:
-      DATABASE_URL: postgresql+asyncpg://postgres:postgres@db:5432/autoapply
+      DATABASE_URL: postgresql+asyncpg://postgres:postgres@db:5432/careerly
       REDIS_URL: redis://redis:6379/0
       CELERY_BROKER_URL: redis://redis:6379/1
       CELERY_RESULT_BACKEND: redis://redis:6379/2
@@ -63,7 +63,7 @@ services:
     env_file:
       - .env
     environment:
-      DATABASE_URL: postgresql+asyncpg://postgres:postgres@db:5432/autoapply
+      DATABASE_URL: postgresql+asyncpg://postgres:postgres@db:5432/careerly
       REDIS_URL: redis://redis:6379/0
       CELERY_BROKER_URL: redis://redis:6379/1
       CELERY_RESULT_BACKEND: redis://redis:6379/2

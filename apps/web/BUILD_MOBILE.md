@@ -1,4 +1,4 @@
-# Building AutoApply AI for Mobile
+# Building Careerly for Mobile
 
 ## Option 1: PWA (Instant - No Build Needed)
 The app is already a Progressive Web App. Users can install it directly:

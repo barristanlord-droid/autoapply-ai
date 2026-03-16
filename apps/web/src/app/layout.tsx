@@ -7,7 +7,7 @@ import CookieConsent from "@/components/CookieConsent";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "AutoApply AI - Land Your Dream Job Faster",
+  title: "Careerly - Land Your Dream Job Faster",
   description:
     "AI-powered job search that matches you to perfect opportunities, tailors your CV, and applies automatically. Serving the UK and EU.",
   keywords: ["job search", "AI CV", "auto apply", "career", "UK jobs", "EU jobs"],
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "AutoApply AI",
+    title: "Careerly",
   },
   icons: {
     icon: [

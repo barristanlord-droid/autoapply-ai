@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: autoapply-api
+    name: careerly-api
     runtime: python
     region: frankfurt
     plan: free
@@ -9,11 +9,11 @@ services:
     startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: DATABASE_URL
-        value: sqlite+aiosqlite:///./autoapply.db
+        value: sqlite+aiosqlite:///./careerly.db
       - key: SECRET_KEY
         generateValue: true
       - key: FRONTEND_URL
-        value: https://autoapply-ai.vercel.app
+        value: https://careerly.vercel.app
       - key: DEBUG
         value: "false"
     healthCheckPath: /health

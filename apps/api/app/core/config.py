@@ -4,13 +4,13 @@ from functools import lru_cache
 
 class Settings(BaseSettings):
     # App
-    APP_NAME: str = "AutoApply AI"
+    APP_NAME: str = "Careerly"
     APP_VERSION: str = "0.1.0"
     DEBUG: bool = True
     API_PREFIX: str = "/api/v1"
 
     # Database (SQLite for dev, PostgreSQL for production)
-    DATABASE_URL: str = "sqlite+aiosqlite:///./autoapply.db"
+    DATABASE_URL: str = "sqlite+aiosqlite:///./careerly.db"
     DATABASE_ECHO: bool = False
 
     # Redis
@@ -38,7 +38,7 @@ class Settings(BaseSettings):
     AWS_ACCESS_KEY_ID: str = ""
     AWS_SECRET_ACCESS_KEY: str = ""
     AWS_REGION: str = "us-east-1"
-    S3_BUCKET_NAME: str = "autoapply-resumes"
+    S3_BUCKET_NAME: str = "careerly-resumes"
 
     # Stripe
     STRIPE_SECRET_KEY: str = ""

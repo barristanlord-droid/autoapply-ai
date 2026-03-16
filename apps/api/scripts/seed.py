@@ -1,5 +1,5 @@
 """
-Seed script for AutoApply AI database.
+Seed script for Careerly database.
 Creates a test user, profile, skills, sample job listings, applications, and notifications.
 
 Usage:
@@ -448,7 +448,7 @@ JOBS_DATA = [
 
 async def seed_database():
     print("=" * 60)
-    print("  AutoApply AI - Database Seeder")
+    print("  Careerly - Database Seeder")
     print("=" * 60)
 
     async with async_session() as session:
@@ -465,7 +465,7 @@ async def seed_database():
         print("\n[1/8] Creating test user...")
         user = User(
             id=USER_ID,
-            email="demo@autoapply.ai",
+            email="demo@careerly.ai",
             hashed_password=hash_password("password123"),
             full_name="Alex Johnson",
             avatar_url=None,
@@ -770,7 +770,7 @@ async def seed_database():
             Notification(
                 user_id=USER_ID,
                 type="system",
-                title="Welcome to AutoApply AI!",
+                title="Welcome to Careerly!",
                 body="Your account is set up. Start by uploading your resume to get personalized job matches.",
                 is_read=True,
                 read_at=now - timedelta(days=5),
@@ -788,7 +788,7 @@ async def seed_database():
     print(f"""
   Summary:
   --------
-  - 1 test user (demo@autoapply.ai / password123)
+  - 1 test user (demo@careerly.ai / password123)
   - 1 profile with headline, summary & preferences
   - {len(SKILLS_DATA)} skills in the taxonomy
   - {len(user_skills_data)} user skills with proficiency levels
@@ -803,7 +803,7 @@ async def seed_database():
 
   Login credentials:
   ------------------
-  Email:    demo@autoapply.ai
+  Email:    demo@careerly.ai
   Password: password123
 """)
 

@@ -26,7 +26,7 @@ export default function CookieConsent() {
     <div className="fixed bottom-0 left-0 right-0 z-[100] bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 p-4 shadow-lg">
       <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-sm text-gray-600 dark:text-gray-400">
-          We use essential cookies to make AutoApply work. We&apos;d also like to use analytics cookies to understand how you use our service and improve it.{" "}
+          We use essential cookies to make Careerly work. We&apos;d also like to use analytics cookies to understand how you use our service and improve it.{" "}
           <a href="/cookies" className="text-brand-600 dark:text-brand-400 underline">
             Cookie Policy
           </a>

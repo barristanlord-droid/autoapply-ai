@@ -20,7 +20,7 @@ client = AsyncOpenAI(api_key=settings.OPENAI_API_KEY)
 logger = structlog.get_logger()
 
 SYSTEM_PROMPTS = {
-    "general": """You are an AI career assistant called AutoApply Coach. You help job seekers with:
+    "general": """You are an AI career assistant called Careerly Coach. You help job seekers with:
 - Career advice and strategy
 - Resume improvement tips
 - Job search strategies

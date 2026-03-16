@@ -6,7 +6,7 @@ export default function LandingPage() {
       {/* Nav */}
       <nav className="fixed top-0 w-full bg-white/80 dark:bg-gray-950/80 backdrop-blur-xl border-b border-gray-100 dark:border-gray-800 z-50">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="text-xl font-bold gradient-text">AutoApply</div>
+          <div className="text-xl font-bold gradient-text">Careerly</div>
           <div className="flex items-center gap-4">
             <Link href="/login" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm font-medium">
               Log in
@@ -192,7 +192,7 @@ export default function LandingPage() {
       <footer className="py-12 px-6 border-t border-gray-100 dark:border-gray-800">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-6">
-            <div className="text-lg font-bold gradient-text">AutoApply</div>
+            <div className="text-lg font-bold gradient-text">Careerly</div>
             <div className="flex items-center gap-6 text-sm text-gray-400 dark:text-gray-500">
               <Link href="/privacy" className="hover:text-gray-600 dark:hover:text-gray-300">Privacy Policy</Link>
               <Link href="/terms" className="hover:text-gray-600 dark:hover:text-gray-300">Terms of Service</Link>
@@ -201,7 +201,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-gray-400 dark:text-gray-600">
-            <p>&copy; 2026 AutoApply AI Ltd. All rights reserved. Registered in England &amp; Wales.</p>
+            <p>&copy; 2026 Careerly Ltd. All rights reserved. Registered in England &amp; Wales.</p>
             <p>Serving job seekers across the UK &amp; EU</p>
           </div>
         </div>

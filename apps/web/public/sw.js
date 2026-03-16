@@ -1,4 +1,4 @@
-const CACHE_NAME = 'autoapply-v1';
+const CACHE_NAME = 'careerly-v1';
 const STATIC_ASSETS = [
   '/',
   '/dashboard',

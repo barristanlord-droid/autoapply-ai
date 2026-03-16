@@ -49,7 +49,7 @@ function LoginForm() {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <Link href="/" className="text-2xl font-bold gradient-text">
-            AutoApply
+            Careerly
           </Link>
           <h1 className="text-2xl font-bold text-gray-900 dark:text-white mt-6">Welcome back</h1>
           <p className="text-gray-500 dark:text-gray-400 mt-2">Sign in to continue your job search</p>

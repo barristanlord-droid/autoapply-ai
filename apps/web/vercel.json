@@ -3,6 +3,6 @@
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
   "env": {
-    "NEXT_PUBLIC_API_URL": "https://autoapply-api.onrender.com/api/v1"
+    "NEXT_PUBLIC_API_URL": "https://careerly-api.onrender.com/api/v1"
   }
 }

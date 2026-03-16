@@ -1,6 +1,6 @@
 {
-  "name": "AutoApply AI",
-  "short_name": "AutoApply",
+  "name": "Careerly",
+  "short_name": "Careerly",
   "description": "AI-powered job search that matches you to perfect opportunities, tailors your resume, and applies automatically.",
   "start_url": "/dashboard",
   "display": "standalone",

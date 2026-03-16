@@ -2,7 +2,7 @@ import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'ai.autoapply.app',
-  appName: 'AutoApply AI',
+  appName: 'Careerly',
   webDir: 'out',
   server: {
     androidScheme: 'https',

@@ -110,7 +110,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         <div className="flex items-center justify-between px-6 h-16 border-b border-gray-100 dark:border-gray-800">
           <div className="flex items-center gap-2">
             <Sparkles className="w-6 h-6 text-brand-600" />
-            <span className="text-lg font-bold gradient-text">AutoApply</span>
+            <span className="text-lg font-bold gradient-text">Careerly</span>
           </div>
           <div className="flex items-center gap-1">
             {/* Theme toggle */}
@@ -228,7 +228,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         <div className="flex items-center justify-between px-4 h-14">
           <div className="flex items-center gap-2">
             <Sparkles className="w-5 h-5 text-brand-600" />
-            <span className="font-bold gradient-text">AutoApply</span>
+            <span className="font-bold gradient-text">Careerly</span>
           </div>
           <div className="flex items-center gap-2">
             <button
