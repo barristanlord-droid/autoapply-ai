@@ -44,6 +44,10 @@ jobs:
         working-directory: apps/web
         run: npx cap sync android
 
+      - name: Make gradlew executable
+        working-directory: apps/web/android
+        run: chmod +x gradlew
+
       - name: Build Debug APK
         working-directory: apps/web/android
         run: ./gradlew assembleDebug

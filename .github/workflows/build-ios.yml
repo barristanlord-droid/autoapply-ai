@@ -35,10 +35,14 @@ jobs:
         working-directory: apps/web
         run: npx cap sync ios
 
+      - name: Resolve SPM dependencies
+        working-directory: apps/web/ios/App
+        run: xcodebuild -resolvePackageDependencies -project App.xcodeproj -scheme App
+
       - name: Build iOS (unsigned)
         working-directory: apps/web/ios/App
         run: |
-          xcodebuild -workspace App.xcworkspace \
+          xcodebuild -project App.xcodeproj \
             -scheme App \
             -configuration Release \
             -sdk iphoneos \
