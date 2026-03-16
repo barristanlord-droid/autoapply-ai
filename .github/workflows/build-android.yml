@@ -1,0 +1,73 @@
+name: Build Android APK/AAB
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: apps/web/package-lock.json
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install dependencies
+        working-directory: apps/web
+        run: npm ci
+
+      - name: Build static export
+        working-directory: apps/web
+        env:
+          CAPACITOR_BUILD: '1'
+          NEXT_PUBLIC_API_URL: ${{ vars.API_URL || 'https://careerly-api.onrender.com/api/v1' }}
+        run: npx next build
+
+      - name: Sync Capacitor
+        working-directory: apps/web
+        run: npx cap sync android
+
+      - name: Build Debug APK
+        working-directory: apps/web/android
+        run: ./gradlew assembleDebug
+
+      - name: Build Release AAB (for Play Store)
+        working-directory: apps/web/android
+        run: ./gradlew bundleRelease
+
+      - name: Upload Debug APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: careerly-debug.apk
+          path: apps/web/android/app/build/outputs/apk/debug/app-debug.apk
+
+      - name: Upload Release AAB
+        uses: actions/upload-artifact@v4
+        with:
+          name: careerly-release.aab
+          path: apps/web/android/app/build/outputs/bundle/release/app-release.aab
+
+      - name: Upload to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            apps/web/android/app/build/outputs/apk/debug/app-debug.apk
+            apps/web/android/app/build/outputs/bundle/release/app-release.aab

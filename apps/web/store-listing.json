@@ -1,0 +1,22 @@
+{
+  "app_name": "Careerly - AI Job Search & Apply",
+  "short_description": "Land your dream job 10x faster with AI-powered CV matching and auto-apply.",
+  "full_description": "Careerly is the smartest way to find and land your next job. Upload your CV once, and our AI does the rest \u2014 matching you to perfect opportunities, tailoring your application, and applying automatically.\n\nKey Features:\n\n\ud83d\udcca Smart Job Matching\nOur AI analyses your CV and matches you to jobs that truly fit your skills and experience. Not just keywords \u2014 real understanding of your strengths.\n\n\ud83d\ude80 Auto Apply\nOne tap to apply with a tailored CV and cover letter. Or set it to fully automatic and let Careerly work whilst you sleep.\n\n\ud83c\udfaf Swipe to Discover\nBrowse jobs like never before. Swipe right to save, left to skip. Simple and fast.\n\n\ud83e\udde0 AI Career Coach\nChat with an AI that knows your CV inside out. Get personalised interview prep, salary advice, and career strategy.\n\n\ud83d\udcca Application Tracker\nTrack every application in one dashboard. See response rates, interview rates, and analytics at a glance.\n\n\ud83c\udf93 Interview Prep\nAI-generated practice questions tailored to each role. Mock interviews with instant feedback.\n\nWhy Careerly?\n\u2022 Save hours of manual job searching\n\u2022 Every application is tailored, never generic\n\u2022 Beat ATS systems with AI-optimised CVs\n\u2022 Track everything in one place\n\u2022 GDPR compliant \u2014 your data is safe\n\nServing job seekers across the United Kingdom and European Union.\n\nStart free with 5 auto-applies per month. Upgrade to Pro (\u00a315/month) or Premium (\u00a329/month) for unlimited access.\n\nCareerly Ltd. Registered in England & Wales.",
+  "categories": {
+    "google_play": "Business",
+    "apple": "Business"
+  },
+  "subcategories": {
+    "google_play": "Job Search",
+    "apple": "Productivity"
+  },
+  "keywords": "job search, CV, resume, auto apply, AI jobs, career, UK jobs, EU jobs, job matching, cover letter, interview prep",
+  "content_rating": "Everyone",
+  "privacy_policy_url": "https://careerly.vercel.app/privacy",
+  "support_email": "barristanlord@gmail.com",
+  "website": "https://careerly.vercel.app",
+  "default_language": "en-GB",
+  "target_countries": ["GB", "IE", "DE", "FR", "NL", "ES", "IT", "SE", "DK", "NO", "FI", "BE", "AT", "CH", "PL", "PT", "CZ"],
+  "age_rating": "4+",
+  "pricing": "Free with in-app purchases"
+}

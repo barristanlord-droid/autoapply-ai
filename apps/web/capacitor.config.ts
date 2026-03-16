@@ -1,7 +1,7 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'ai.autoapply.app',
+  appId: 'app.careerly',
   appName: 'Careerly',
   webDir: 'out',
   server: {
