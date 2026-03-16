@@ -33,7 +33,7 @@ export default function LandingPage() {
           </h1>
 
           <p className="text-xl text-gray-500 dark:text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Upload your resume once. Our AI finds perfect matches, tailors your
+            Upload your CV once. Our AI finds perfect matches, tailors your
             application, and applies automatically. You focus on interviews.
           </p>
 
@@ -63,7 +63,7 @@ export default function LandingPage() {
             {[
               {
                 step: "01",
-                title: "Upload Resume",
+                title: "Upload CV",
                 desc: "Drop your PDF or DOCX. AI extracts your skills, experience, and strengths in seconds.",
                 icon: "\u{1F4C4}",
               },
@@ -101,9 +101,9 @@ export default function LandingPage() {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               { title: "Smart Job Matching", desc: "Semantic AI matches you to jobs others miss. Not just keywords \u2014 real understanding of your fit.", color: "bg-blue-50 dark:bg-blue-950/50" },
-              { title: "Tailored Applications", desc: "Every resume and cover letter customized for the specific role. Beat ATS systems automatically.", color: "bg-purple-50 dark:bg-purple-950/50" },
+              { title: "Tailored Applications", desc: "Every CV and cover letter customised for the specific role. Beat ATS systems automatically.", color: "bg-purple-50 dark:bg-purple-950/50" },
               { title: "Swipe to Apply", desc: "Tinder-style job browsing. Swipe right to save, left to skip. Apply in one tap.", color: "bg-green-50 dark:bg-green-950/50" },
-              { title: "AI Career Coach", desc: "Chat with an AI that knows your resume. Get interview prep, salary advice, and career strategy.", color: "bg-amber-50 dark:bg-amber-950/50" },
+              { title: "AI Career Coach", desc: "Chat with an AI that knows your CV. Get interview prep, salary advice, and career strategy.", color: "bg-amber-50 dark:bg-amber-950/50" },
               { title: "Application Tracker", desc: "Dashboard showing every application status. Response rates, interview rates, analytics.", color: "bg-rose-50 dark:bg-rose-950/50" },
               { title: "Interview Prep", desc: "AI-generated practice questions specific to each role. Mock interviews with feedback.", color: "bg-cyan-50 dark:bg-cyan-950/50" },
             ].map((feature) => (
@@ -128,14 +128,14 @@ export default function LandingPage() {
             {[
               {
                 name: "Free",
-                price: "$0",
+                price: "\u00A30",
                 features: ["5 auto-applies/month", "20 AI generations", "Basic job matching", "Application tracker"],
                 cta: "Get Started",
                 highlight: false,
               },
               {
                 name: "Pro",
-                price: "$19",
+                price: "\u00A315",
                 period: "/month",
                 features: ["50 auto-applies/month", "Unlimited AI generations", "Priority job matching", "Advanced analytics", "Interview prep"],
                 cta: "Start Pro Trial",
@@ -143,9 +143,9 @@ export default function LandingPage() {
               },
               {
                 name: "Premium",
-                price: "$39",
+                price: "\u00A329",
                 period: "/month",
-                features: ["Unlimited auto-applies", "Unlimited everything", "Dedicated AI coach", "Resume A/B testing", "Priority support"],
+                features: ["Unlimited auto-applies", "Unlimited everything", "Dedicated AI coach", "CV A/B testing", "Priority support"],
                 cta: "Go Premium",
                 highlight: false,
               },
@@ -190,11 +190,20 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="py-12 px-6 border-t border-gray-100 dark:border-gray-800">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="text-lg font-bold gradient-text">AutoApply</div>
-          <p className="text-sm text-gray-400 dark:text-gray-500">
-            &copy; 2026 AutoApply AI. All rights reserved.
-          </p>
+        <div className="max-w-5xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-6">
+            <div className="text-lg font-bold gradient-text">AutoApply</div>
+            <div className="flex items-center gap-6 text-sm text-gray-400 dark:text-gray-500">
+              <Link href="/privacy" className="hover:text-gray-600 dark:hover:text-gray-300">Privacy Policy</Link>
+              <Link href="/terms" className="hover:text-gray-600 dark:hover:text-gray-300">Terms of Service</Link>
+              <Link href="/cookies" className="hover:text-gray-600 dark:hover:text-gray-300">Cookie Policy</Link>
+              <Link href="/gdpr" className="hover:text-gray-600 dark:hover:text-gray-300">GDPR</Link>
+            </div>
+          </div>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-gray-400 dark:text-gray-600">
+            <p>&copy; 2026 AutoApply AI Ltd. All rights reserved. Registered in England &amp; Wales.</p>
+            <p>Serving job seekers across the UK &amp; EU</p>
+          </div>
         </div>
       </footer>
     </div>

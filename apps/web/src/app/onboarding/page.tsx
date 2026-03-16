@@ -28,7 +28,7 @@ export default function OnboardingPage() {
     setUploading(true);
     try {
       const { data } = await resumeAPI.upload(file);
-      toast.success("Resume uploaded! AI is parsing it...");
+      toast.success("CV uploaded! AI is parsing it...");
       setStep("parsing");
 
       // Poll for parsing completion
@@ -39,7 +39,7 @@ export default function OnboardingPage() {
             clearInterval(pollInterval);
             setParsedData(parsed.parsed_data);
             setStep("preferences");
-            toast.success("Resume parsed successfully!");
+            toast.success("CV parsed successfully!");
           }
         } catch {
           // Still parsing, continue polling
@@ -96,7 +96,7 @@ export default function OnboardingPage() {
         {/* Step: Upload */}
         {step === "upload" && (
           <div className="card text-center">
-            <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Upload your resume</h1>
+            <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Upload your CV</h1>
             <p className="text-gray-500 dark:text-gray-400 mb-8">
               Our AI will extract your skills, experience, and strengths automatically.
             </p>
@@ -118,7 +118,7 @@ export default function OnboardingPage() {
               ) : (
                 <>
                   <p className="font-medium text-gray-900 dark:text-white">
-                    Drag & drop your resume here
+                    Drag & drop your CV here
                   </p>
                   <p className="text-sm text-gray-400 dark:text-gray-500 mt-1">
                     PDF or DOCX, max 10MB
@@ -141,7 +141,7 @@ export default function OnboardingPage() {
           <div className="card text-center">
             <div className="animate-pulse">
               <div className="text-5xl mb-4">{"\u{1F9E0}"}</div>
-              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-2">AI is reading your resume</h2>
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-2">AI is reading your CV</h2>
               <p className="text-gray-500 dark:text-gray-400">
                 Extracting skills, experience, education...
               </p>
@@ -202,7 +202,7 @@ export default function OnboardingPage() {
                 </label>
                 <input
                   className="input-field"
-                  placeholder="e.g., San Francisco, New York, London"
+                  placeholder="e.g., London, Manchester, Berlin, Remote"
                   value={preferences.preferred_locations[0]}
                   onChange={(e) =>
                     setPreferences({
