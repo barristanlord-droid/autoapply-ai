@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">AutoApply AI</string>
+    <string name="title_activity_main">AutoApply AI</string>
+    <string name="package_name">ai.autoapply.app</string>
+    <string name="custom_url_scheme">ai.autoapply.app</string>
+</resources>
