@@ -1,6 +1,6 @@
 {
-  "name": "Careerly",
-  "short_name": "Careerly",
+  "name": "Elevyr",
+  "short_name": "Elevyr",
   "description": "AI-powered job search that matches you to perfect opportunities, tailors your resume, and applies automatically.",
   "start_url": "/dashboard",
   "display": "standalone",

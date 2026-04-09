@@ -4,7 +4,7 @@ from app.core.config import get_settings
 settings = get_settings()
 
 celery_app = Celery(
-    "careerly",
+    "elevyr",
     broker=settings.CELERY_BROKER_URL,
     backend=settings.CELERY_RESULT_BACKEND,
 )

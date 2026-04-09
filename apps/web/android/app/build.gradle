@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace = "ai.autoapply.app"
+    namespace = "app.elevyr"
     compileSdk = rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "app.careerly"
+        applicationId "app.elevyr"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

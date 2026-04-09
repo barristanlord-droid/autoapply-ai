@@ -15,7 +15,7 @@ async function generateFeatureGraphic() {
       </linearGradient>
     </defs>
     <rect width="1024" height="500" fill="url(#bg)"/>
-    <text x="512" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="72" fill="#3b82f6">Careerly</text>
+    <text x="512" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="72" fill="#3b82f6">Elevyr</text>
     <text x="512" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="36" fill="white">Land your dream job 10x faster</text>
     <text x="512" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#94a3b8">AI-powered CV matching &amp; auto-apply</text>
     <text x="512" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#64748b">Serving the UK &amp; EU</text>
@@ -37,7 +37,7 @@ async function generatePhoneScreenshot(name, width, height) {
       </linearGradient>
     </defs>
     <rect width="${width}" height="${height}" fill="url(#bg)"/>
-    <text x="${width/2}" y="${height*0.15}" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="${width*0.08}" fill="#3b82f6">Careerly</text>
+    <text x="${width/2}" y="${height*0.15}" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="${width*0.08}" fill="#3b82f6">Elevyr</text>
     <text x="${width/2}" y="${height*0.25}" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="${width*0.045}" fill="white">AI-Powered Job Search</text>
     <text x="${width/2}" y="${height*0.32}" text-anchor="middle" font-family="Arial, sans-serif" font-size="${width*0.032}" fill="#94a3b8">Upload your CV. We do the rest.</text>
     <rect x="${width*0.1}" y="${height*0.38}" width="${width*0.8}" height="${height*0.5}" rx="20" fill="#1e293b" stroke="#334155" stroke-width="2"/>

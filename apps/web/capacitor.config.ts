@@ -1,8 +1,8 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'app.careerly',
-  appName: 'Careerly',
+  appId: 'app.elevyr',
+  appName: 'Elevyr',
   webDir: 'out',
   server: {
     androidScheme: 'https',

@@ -28,7 +28,7 @@ jobs:
         working-directory: apps/web
         env:
           CAPACITOR_BUILD: '1'
-          NEXT_PUBLIC_API_URL: ${{ vars.API_URL || 'https://careerly-api.onrender.com/api/v1' }}
+          NEXT_PUBLIC_API_URL: ${{ vars.API_URL || 'https://elevyr-api.onrender.com/api/v1' }}
         run: npx next build
 
       - name: Sync Capacitor
@@ -47,7 +47,7 @@ jobs:
             -configuration Release \
             -sdk iphoneos \
             -destination generic/platform=iOS \
-            -archivePath build/Careerly.xcarchive \
+            -archivePath build/Elevyr.xcarchive \
             archive \
             CODE_SIGN_IDENTITY="" \
             CODE_SIGNING_REQUIRED=NO \
@@ -57,17 +57,17 @@ jobs:
         working-directory: apps/web/ios/App
         run: |
           mkdir -p build/Payload
-          cp -r build/Careerly.xcarchive/Products/Applications/App.app build/Payload/
-          cd build && zip -r Careerly-unsigned.ipa Payload
+          cp -r build/Elevyr.xcarchive/Products/Applications/App.app build/Payload/
+          cd build && zip -r Elevyr-unsigned.ipa Payload
 
       - name: Upload unsigned IPA
         uses: actions/upload-artifact@v4
         with:
-          name: careerly-unsigned.ipa
-          path: apps/web/ios/App/build/Careerly-unsigned.ipa
+          name: elevyr-unsigned.ipa
+          path: apps/web/ios/App/build/Elevyr-unsigned.ipa
 
       - name: Upload to GitHub Release
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
-          files: apps/web/ios/App/build/Careerly-unsigned.ipa
+          files: apps/web/ios/App/build/Elevyr-unsigned.ipa
